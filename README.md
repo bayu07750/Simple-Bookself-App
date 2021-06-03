@@ -7,4 +7,4 @@ Repository ini saya gunakan untuk belajar [Web Storage APIs](https://developer.m
 * Tandai buku sudah dibaca
 * Cari buku
 * Mempertahankan data buku ketika user menutup tab/browser
-## Demo
+## [Demo](https://bayu07750.github.io/Simple-Bookself-App/)
