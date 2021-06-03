@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://kit.fontawesome.com/72229f0b57.js" crossorigin="anonymous"></script>
+    <title>Bookshelf Apps</title>
+  </head>
+  <body>
+    <header>
+      <h1>Aplikasi Rak Buku</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="search-wrapper">
+          <form id="search-form">
+            <i class="fas fa-search"></i>
+            <input type="text" name="searchQuery" id="searchQuery" placeholder="Cari buku" />
+          </form>
+        </div>
+
+        <div class="content shadow">
+          <section id="not-finished-wrapper" class="not-finished-wrapper">
+            <h2>Belum selesai dibaca :</h2>
+            <div class="items"></div>
+          </section>
+          <section id="finished-wrapper" class="finished-wrapper">
+            <h2>Selesai dibaca :</h2>
+            <div class="items"></div>
+          </section>
+        </div>
+      </div>
+
+      <div class="floating-bar">
+        <a href="#book-wrapper"><i class="fas fa-plus"></i></a>
+      </div>
+
+      <div id="book-wrapper" class="books-wrapper">
+        <h2>Tambahkan buku</h2>
+        <form action="" id="form-book">
+          <div class="form-element">
+            <input type="text" name="title" id="title" placeholder="Masukan judul" autocomplete="off" required />
+          </div>
+          <div class="form-element">
+            <input type="text" name="author" id="author" placeholder="Masukan penulis" autocomplete="off" required />
+          </div>
+          <div class="form-element">
+            <input type="number" name="year" id="year" placeholder="Masukan tahun" maxlength="4" required />
+          </div>
+          <div class="form-element">
+            <input class="btn" type="submit" value="Tambahkan" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <button id="btnBackToTop" title="Kembali ka atas"><i class="fas fa-angle-up"></i></button>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
